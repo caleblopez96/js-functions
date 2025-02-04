@@ -13,14 +13,14 @@ function addTwoNums(num1, num2) {
 function concatenateString(string1, string2) {
   return string1 + " " + string2
 }
-concatenateString("hello", "world")
+
 
 
 // for the first function expression, let's write code that displays returns one result if the number entered by the user is less than 100 ("number is less than 100"), and another message if the number is greater than or equal to 100 ("that is 100 or greater")
 // name this variable compareToHundred
 // TO DO
 
-const compareToHundred = number => number < 100 ? "Number is less than 100" : "Number is greater than 100"
+const compareToHundred = number => number < 100 ? `${number} is less than 100` : `${number} is greater than or equal to 100`
 
 console.log(compareToHundred(100))
 
@@ -29,16 +29,14 @@ console.log(compareToHundred(100))
 // name this variable quizAnswer
 // TO DO
 const quizAnswer = letter => {
-  if (letter === "d") {
-    console.log("You got it! GIT417 is the Introductory JavaScript course.")
+  if (letter === 'd') {
+    return "You got it! GIT417 is the Introductory JavaScript course."
   } else if (letter === 'a') {
-    console.log("Nope. GIT215 is the Introductory HTML/CSS course.")
+    return "Nope. GIT215 is the Introductory HTML/CSS course."
   } else if (letter === 'b') {
-    console.log("Nope. GIT337 is the Intermediate HTML/CSS course."
-    )
+    return "Nope. GIT337 is the Intermediate HTML/CSS course."
   } else if (letter === 'c') {
-    console.log("Nope. GIT414 is the Responsive HTML/CSS course."
-    )
+    return "Nope. GIT414 is the Responsive HTML/CSS course."
   }
 }
 
@@ -58,7 +56,6 @@ console.log(quizAnswer('a'))
 // For box five, re-write the first standard function in the arrow function syntax
 // name the variable addTwoNumsArrow
 // TO DO
-
 const addTwoNumsArrow = (num1, num2) => num1 + num2
 
 
